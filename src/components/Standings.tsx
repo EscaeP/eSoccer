@@ -7,11 +7,11 @@ export function Standings() {
   const maxGD = Math.max(...STANDINGS.map(s => Math.abs(s.goalDifference)));
 
   return (
-    <div className="flex-1 w-full h-full overflow-y-auto bg-slate-950 p-8 custom-scrollbar">
-      <div className="max-w-6xl mx-auto">
-        <div className="mb-8">
-          <h2 className="text-3xl font-black text-slate-100 flex items-center gap-3">
-            <span className="w-2 h-8 bg-amber-500 rounded-full inline-block"></span>
+    <div className="flex-1 w-full h-full overflow-y-auto bg-slate-950 p-4 md:p-8 custom-scrollbar">
+      <div className="max-w-6xl mx-auto pb-safe">
+        <div className="mb-6 md:mb-8">
+          <h2 className="text-2xl md:text-3xl font-black text-slate-100 flex items-center gap-2 md:gap-3">
+            <span className="w-2 h-6 md:h-8 bg-amber-500 rounded-full inline-block"></span>
             湖北足球联赛 积分榜
           </h2>
           <p className="text-slate-400 mt-2 ml-5">赛季实时排名，战况可视化数据分析</p>

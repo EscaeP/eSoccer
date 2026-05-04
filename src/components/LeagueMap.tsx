@@ -87,12 +87,12 @@ export function LeagueMap({ selectedMatchId, onSelectMatch, matches }: LeagueMap
 
   return (
     <div className="w-full h-full relative z-0 md:rounded-2xl overflow-hidden border border-slate-800 shadow-2xl">
-      <div className="absolute top-6 left-6 z-10 pointer-events-none">
-        <div className="bg-slate-900/80 backdrop-blur border border-slate-700 p-4 rounded-xl flex flex-col gap-2 pointer-events-auto">
-          <h2 className="text-xs font-bold text-slate-400 uppercase">时间先后指示</h2>
+      <div className="absolute top-4 left-4 md:top-6 md:left-6 z-10 pointer-events-none">
+        <div className="bg-slate-900/80 backdrop-blur border border-slate-700 p-3 md:p-4 rounded-xl flex flex-col gap-1 md:gap-2 pointer-events-auto scale-90 md:scale-100 origin-top-left">
+          <h2 className="text-[10px] md:text-xs font-bold text-slate-400 uppercase">时间先后指示</h2>
           <div className="flex items-center gap-2">
             <span className="text-[10px] text-red-500 font-bold">近期</span>
-            <div className="w-32 h-2 rounded-full bg-gradient-to-r from-red-500 via-yellow-500 to-green-500"></div>
+            <div className="w-20 md:w-32 h-1.5 md:h-2 rounded-full bg-gradient-to-r from-red-500 via-yellow-500 to-green-500"></div>
             <span className="text-[10px] text-green-500 font-bold">远期</span>
           </div>
         </div>

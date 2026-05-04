@@ -195,20 +195,20 @@ export function DataAnalysis() {
   };
 
   return (
-    <div className="flex-1 w-full h-full bg-slate-950 p-8 flex flex-col">
-      <div className="mb-4 flex items-center justify-between">
+    <div className="flex-1 w-full h-full bg-slate-950 p-4 md:p-8 flex flex-col">
+      <div className="mb-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
         <div>
-          <h2 className="text-3xl font-black text-slate-100 flex items-center gap-3">
-            <span className="w-2 h-8 bg-indigo-500 rounded-full inline-block"></span>
+          <h2 className="text-2xl md:text-3xl font-black text-slate-100 flex items-center gap-2 md:gap-3">
+            <span className="w-2 h-6 md:h-8 bg-indigo-500 rounded-full inline-block"></span>
             赛事数据分析
           </h2>
-          <p className="text-slate-400 mt-2 ml-5">近场次胜负关系图谱 (支持缩放与拖动节点)</p>
+          <p className="text-xs md:text-base text-slate-400 mt-1 md:mt-2 ml-4 md:ml-5">近场次胜负关系图谱 (支持缩放与拖动节点)</p>
         </div>
       </div>
       
       <div className="flex-1 w-full bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl relative" ref={containerRef}>
-        <div className="absolute top-4 left-4 flex flex-col gap-2 z-10">
-          <div className="flex gap-4 bg-slate-950/80 backdrop-blur p-3 rounded-lg border border-slate-800">
+        <div className="absolute top-4 left-4 flex flex-col gap-2 z-10 pointer-events-none">
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 bg-slate-950/80 backdrop-blur p-2 sm:p-3 rounded-lg border border-slate-800 pointer-events-auto">
             <div className="flex items-center gap-2">
               <span className="w-3 h-3 rounded-full bg-[#064e3b] border-2 border-[#34d399]"></span>
               <span className="text-xs font-bold text-slate-300">胜者</span>

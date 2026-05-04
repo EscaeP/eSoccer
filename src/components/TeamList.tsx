@@ -5,14 +5,14 @@ import { Shield } from 'lucide-react';
 
 export function TeamList() {
   return (
-    <div className="flex-1 w-full h-full overflow-y-auto bg-slate-950 p-8 custom-scrollbar">
+    <div className="flex-1 w-full h-full overflow-y-auto bg-slate-950 p-4 md:p-8 custom-scrollbar">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-8">
-          <h2 className="text-3xl font-black text-slate-100 flex items-center gap-3">
-            <span className="w-2 h-8 bg-sky-500 rounded-full inline-block"></span>
+        <div className="mb-6 md:mb-8">
+          <h2 className="text-2xl md:text-3xl font-black text-slate-100 flex items-center gap-2 md:gap-3">
+            <span className="w-2 h-6 md:h-8 bg-sky-500 rounded-full inline-block"></span>
             参赛队伍一览
           </h2>
-          <p className="text-slate-400 mt-2 ml-5">
+          <p className="text-xs md:text-base text-slate-400 mt-2 ml-4 md:ml-5">
             2026湖北省城市足球联赛共有17支参赛队伍，代表全省17个市州。每支队伍都有自己独特的昵称和特色，展现了各自城市的文化底蕴。
           </p>
         </div>
